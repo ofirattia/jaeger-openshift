@@ -114,6 +114,10 @@ appropriate to create a `PersistentVolumeClaim`/`PersistentVolume` and use it in
 Cassandra deployment does not support deleting pods or scaling down, as this might require
 administrative tasks that are dependent on the final deployment architecture.
 
+#### Storage Creation
+For storage definition, use `production/elasticsearch-storage.yml` and deploy `production/elasticsearch-persistent-volume.yml`
+
+
 ## Exposing Jaeger-Collector outside of Cluster
 Collector is by default accessible only to services running inside the cluster.
 The easiest approach to expose the collector outside of the cluster is via the `jaeger-collector-http`
